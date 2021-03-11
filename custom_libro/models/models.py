@@ -19,7 +19,7 @@ class custom_libro(models.Model):
     # PAGOS (BANCOS - EFECTIVO)
     libro = fields.Many2one('account.journal', string='Diario Cont', domain="['&',['company_id', '=', company_id], '|',['type','=','cash'],['type','=','bank']]")
     
-    tipo = fields.Char(string='Tipo')
+    tipo = fields.Char(string='Tipo prueba')
     
     # RECEPCIONES (VARIOS - BANCOS - EFECTIVO)
     #libro = fields.Many2one('account.journal', string='Diario Cont', domain="['&',['company_id', '=', company_id], '|','|',['type','=','general'],['type','=','bank'],['type','=','cash']]")
